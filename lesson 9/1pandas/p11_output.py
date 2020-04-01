@@ -1,4 +1,6 @@
 # 导出为.xlsx文件
+from pandas.tests.groupby.test_value_counts import df
+
 df.to_excel( excel_writer = r'file.xlsx')
 
 # 设置Sheet名称

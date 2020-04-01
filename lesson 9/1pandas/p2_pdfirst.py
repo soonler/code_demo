@@ -27,7 +27,9 @@ df [ df['star'] == '力荐' ]
 df.dropna()
 
 # 数据聚合
+# 求和（累加）
 df.groupby('star').sum()
+
 
 # 创建新列
 star_to_number = {

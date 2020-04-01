@@ -1,7 +1,8 @@
-from sklearn import datasets #引入数据集
+from sklearn import datasets  # 引入数据集
+
 # 鸢尾花数据集
-iris=datasets.load_iris()
-X, y=iris.data, iris.target
+iris = datasets.load_iris()
+X, y = iris.data, iris.target
 
 # 查看特征
 iris.feature_names
@@ -11,8 +12,8 @@ iris.target_names
 
 # 按照3比1的比例划分训练集和测试集
 from sklearn.model_selection import train_test_split
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.25)
 
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25)
 
 # load_xxx 各种数据集
 # load_boston Boston房屋价格 回归
